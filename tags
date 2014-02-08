@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	techlivezheng	/techlivezheng@gmail.com/
+!_TAG_PROGRAM_NAME	phpctags	//
+!_TAG_PROGRAM_URL	https://github.com/techlivezheng/phpctags	/official site/
+!_TAG_PROGRAM_VERSION	0.5.1	//
+AbstractService	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/AbstractService.php	/^abstract class AbstractService implements$/;"	c	line:15	namespace:WbBase\Service	inherits:ServiceInterface,ServiceLocatorInterface,EventManagerInterface
+AbstractServiceProtectionProxy	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/ServiceProxy.php	/^abstract class AbstractServiceProtectionProxy extends AbstractService$/;"	c	line:13	namespace:WbBase\Service	inherits:AbstractService
+ExceptionInterface	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/Exception/ExceptionInterface.php	/^interface ExceptionInterface$/;"	i	line:5	namespace:WbBase\Service\Exception
+Module	/home/zmicier/work/projects/webbison/repository/WbBase/Module.php	/^class Module$/;"	c	line:14	namespace:WbBase
+ServiceEventDelegator	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/ServiceEventDelegator.php	/^abstract class ServiceEventDelegator extends AbstractService implements EventManagerInterface$/;"	c	line:7	namespace:WbBase\Service	inherits:AbstractService,EventManagerInterface
+ServiceLocatorAwareTrait	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/WbTrait/ServiceManager/ServiceLocatorAwareTrait.php	/^trait ServiceLocatorAwareTrait$/;"	t	line:13	namespace:WbBase\WbTrait\ServiceManager
+ServiceManagerAwareTrait	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/WbTrait/ServiceManager/ServiceManagerAwareTrait.php	/^trait ServiceManagerAwareTrait$/;"	t	line:13	namespace:WbBase\WbTrait\ServiceManager
+WbBase	/home/zmicier/work/projects/webbison/repository/WbBase/Module.php	/^namespace WbBase;$/;"	n	line:9
+WbBase\Service	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/AbstractService.php	/^namespace WbBase\Service;$/;"	n	line:3
+WbBase\Service	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/ServiceEventDelegator.php	/^namespace WbBase\Service;$/;"	n	line:3
+WbBase\Service	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/ServiceProxy.php	/^namespace WbBase\Service;$/;"	n	line:3
+WbBase\Service\Exception	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/Exception/ExceptionInterface.php	/^namespace WbBase\Service\Exception;$/;"	n	line:3
+WbBase\WbTrait\ServiceManager	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/WbTrait/ServiceManager/ServiceLocatorAwareTrait.php	/^namespace WbBase\WbTrait\ServiceManager;$/;"	n	line:3
+WbBase\WbTrait\ServiceManager	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/WbTrait/ServiceManager/ServiceManagerAwareTrait.php	/^namespace WbBase\WbTrait\ServiceManager;$/;"	n	line:3
+__call	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/ServiceEventDelegator.php	/^    public function __call($method, $args)$/;"	m	line:19	class:WbBase\Service\ServiceEventDelegator	access:public
+__construct	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/ServiceEventDelegator.php	/^    public function __construct(ServiceInterface $service, EventManagerInterface $eventManager)$/;"	m	line:13	class:WbBase\Service\ServiceEventDelegator	access:public
+__construct	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/ServiceProxy.php	/^    public function __construct(ServiceInterface $service)$/;"	m	line:20	class:WbBase\Service\AbstractServiceProtectionProxy	access:public
+eventManager	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/ServiceEventDelegator.php	/^        $eventManager = $this->getEventmanager();$/;"	v	line:21	method:WbBase\Service\ServiceEventDelegator::__call
+getAutoloaderConfig	/home/zmicier/work/projects/webbison/repository/WbBase/Module.php	/^    public function getAutoloaderConfig()$/;"	m	line:21	class:WbBase\Module	access:public
+getConfig	/home/zmicier/work/projects/webbison/repository/WbBase/Module.php	/^    public function getConfig()$/;"	m	line:40	class:WbBase\Module	access:public
+getServiceLocator	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/WbTrait/ServiceManager/ServiceLocatorAwareTrait.php	/^    public function getServiceLocator()$/;"	m	line:38	trait:ServiceLocatorAwareTrait	access:public
+getServiceManager	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/WbTrait/ServiceManager/ServiceManagerAwareTrait.php	/^    public function getServiceManager()$/;"	m	line:39	trait:ServiceManagerAwareTrait	access:public
+loader	/home/zmicier/work/projects/webbison/repository/WbBase/test/Bootstrap.php	/^$loader = new \Mockery\Loader;$/;"	v	line:5
+service	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/ServiceEventDelegator.php	/^    protected $service;$/;"	p	line:11	class:WbBase\Service\ServiceEventDelegator	access:protected
+service	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/ServiceProxy.php	/^        $this->service = $service;$/;"	v	line:22	method:WbBase\Service\AbstractServiceProtectionProxy::__construct
+service	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/Service/ServiceProxy.php	/^    protected $service;$/;"	p	line:18	class:WbBase\Service\AbstractServiceProtectionProxy	access:protected
+serviceLocator	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/WbTrait/ServiceManager/ServiceLocatorAwareTrait.php	/^        $this->serviceLocator = $serviceLocator;$/;"	v	line:29	method:WbBase\WbTrait\ServiceManager\ServiceLocatorAwareTrait::setServiceLocator
+serviceLocator	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/WbTrait/ServiceManager/ServiceLocatorAwareTrait.php	/^    protected $serviceLocator;$/;"	p	line:18	trait:ServiceLocatorAwareTrait	access:protected
+serviceManager	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/WbTrait/ServiceManager/ServiceManagerAwareTrait.php	/^        $this->serviceManager = $serviceManager;$/;"	v	line:29	method:WbBase\WbTrait\ServiceManager\ServiceManagerAwareTrait::setServiceManager
+serviceManager	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/WbTrait/ServiceManager/ServiceManagerAwareTrait.php	/^    protected $serviceManager;$/;"	p	line:18	trait:ServiceManagerAwareTrait	access:protected
+setServiceLocator	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/WbTrait/ServiceManager/ServiceLocatorAwareTrait.php	/^    public function setServiceLocator(ServiceLocatorAwareInterface $serviceLocator)$/;"	m	line:27	trait:ServiceLocatorAwareTrait	access:public
+setServiceManager	/home/zmicier/work/projects/webbison/repository/WbBase/src/WbBase/WbTrait/ServiceManager/ServiceManagerAwareTrait.php	/^    public function setServiceManager(ServiceManager $serviceManager)$/;"	m	line:27	trait:ServiceManagerAwareTrait	access:public
