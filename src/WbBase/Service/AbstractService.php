@@ -6,10 +6,10 @@ use WbBase\WbTrait;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
 /**
- * Abstract service 
- * 
+ * Abstract service
+ *
  * @uses ServiceInterface
- * @author Źmicier Hryškieivič <zmicier@webbison.com> 
+ * @author Źmicier Hryškieivič <zmicier@webbison.com>
  */
 abstract class AbstractService implements
     ServiceInterface,

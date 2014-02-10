@@ -12,10 +12,12 @@ use WbBase\WbTrait;
  * @uses EventManagerInterface
  * @author Źmicier Hryškieivič <zmicier@webbison.com> 
  */
-class EventDelegator extends AbstractService implements EventManagerInterface
+class ExceptionDelegator extends AbstractService implements EventManagerInterface
 {
     use WbTrait\EventManager\EventManagerAwareTrait;
     use WbTrait\Service\ServiceDelegatorTrait;
+
+    const DELEGATOR_NAME = "ExceptionDelegator";
 
     public function __construct(ServiceInterface $service, EventManagerInterface $eventManager)
     {
@@ -25,8 +27,19 @@ class EventDelegator extends AbstractService implements EventManagerInterface
 
     public function __call($method, $args)
     {
-        $this->getEventManager()->trigger($method . ':pre', $this, $args);
-        call_user_func_array($this->getService(), $args);
-        $this->getEventManager()->trigger($method . ':post', $this, $args);
+        if ($this->getDelegatorStrategy()->isApplicable(self::DELEGATOR_NAME)) {
+            try {
+                call_user_func_array(
+                    array($this->getService(), $method),
+                    $args
+                );
+            } catch (Service\ExceptionInterface $e) {
+                throw $e;
+            } catch (WbBase\Model\ExceptionInterface $e) {
+                throw new Service\Exception\ModelException('Model error occured: ' . $e->getMessage());
+            } catch (Exception $e) {
+                throw new Service\Exception\Internal('Internal error occured: ' . $e->getMessage());
+            }
+        }
     }
 }

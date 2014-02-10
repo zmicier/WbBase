@@ -34,13 +34,13 @@ abstract class AbstractStrategy implements StrategyInterface
     /**
      * Is delegator applicable for selected strategy.
      * 
-     * @param string $serviceName serviceName 
+     * @param string $delegatorName delegatorName 
      * 
      * @return boolean
      */
-    public function isApplicable($serviceName)
+    public function isApplicable($delegatorName)
     {
-        return in_array($serviceName, $this->getDelegators());
+        return in_array($delegatorName, $this->getDelegators());
     }
 
     /**

@@ -42,7 +42,7 @@ class ServiceEventDelegatorFactory implements
                 }
             }
 
-            return Service\Delegator\DELEGATOR_NAME($service, $eventManager);
+            return Service\Delegator\self::DELEGATOR_NAME($service, $eventManager);
         }
 
         return $service;

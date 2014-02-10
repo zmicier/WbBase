@@ -33,8 +33,9 @@ class EventDelegator extends AbstractService implements EventManagerInterface
      */
     public function __call($method, $args)
     {
-        $this->getEventManager()->trigger($method . '.pre', $this, $args);
-        call_user_func_array($this->getService(), $args);
-        $this->getEventManager()->trigger($method . '.post', $this, $args);
+        $service = $this->getService();
+        $this->getEventManager()->trigger($method . '.pre', $service, $args);
+        call_user_func_array(array($service, $method), $args);
+        $this->getEventManager()->trigger($method . '.post', $service, $args);
     }
 }
